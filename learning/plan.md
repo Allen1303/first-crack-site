@@ -100,13 +100,18 @@ the frontend is whole, and fixes the localStorage limitation for real.
      words ("the dependencies ask for the rest"). Commits `a718398` (docs, made
      BEFORE the risky scaffold — safety-net habit) and `42c1734` (scaffold).
      *Carried into 1.3: read-back quiz on the scaffolder's package.json extras.*
-   - [ ] **1.3 First render, owned.** Open the read-back quiz; tour `index.html` →
-     `main.jsx` → `App.jsx` chain; delete the demo boilerplate and hand-write my own
-     minimal `App.jsx`; predict, then run `npm run dev`.
-     *See: "First Crack Roasting Co." rendered by React at localhost — by my code.*
-   - [ ] **1.4 First commits + push.** `.gitignore`, staged commits with real
-     messages, GitHub repo created, pushed.
-     *See: my code on github.com.*
+   - [x] **1.3 First render, owned.** ✅ 2026-08-01 — read-back quiz done (all six
+     spec fields found in scaffolder's file; @types explained). Render chain
+     translated in own words: "js finds the root div and react renders the app
+     inside it." Boilerplate sweep bundled per pacing rule; first hand-written
+     component (`App.jsx`, h1) rendering at localhost. Styled/unstyled prediction
+     wrong (missed live `index.css` import) → owned and explained. HMR observed
+     ("auto refreshed without me reloading") and named.
+   - [x] **1.4 First commits + push.** ✅ 2026-08-01 — repo
+     `Allen1303/first-crack-site` created + pushed via `gh repo create --source=.
+     --push` (his call to use the CLI). Read the push output: "it sent the commits
+     not the files, gitignore keeps node_modules out." Safety-net commit habit
+     started in 1.2 detour.
    - [ ] **1.5 Production build.** Predict, then run `npm run build`; tour `dist/`.
      *See: the plain files that will actually be hosted.*
    - [ ] **1.6 Deploy pipeline.** Write `.github/workflows/deploy.yml` from spec,

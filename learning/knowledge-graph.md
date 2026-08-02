@@ -34,7 +34,9 @@ are `understood` and fresh. Anything walked through and checked during planning
 
 | Concept | Status | Introduced | Reviewed | Evidence |
 |---|---|---|---|---|
-| ES modules (`import`/`export`) | seed | — | — | — |
+| ES modules (`import`/`export`) | practicing | 2026-08-01 | 2026-08-01 | explained `type="module"` unlocks import/export; traced the import chain (main.jsx → App.jsx, index.css) |
+| The render chain (HTML → module script → React mount) | practicing | 2026-08-01 | 2026-08-01 | own words: "js finds the root div and react renders the app inside it"; wrote + rendered own App.jsx |
+| Vite dev server & HMR | introduced | 2026-08-01 | 2026-08-01 | observed live: "page auto refreshed without me reloading"; HMR/websocket explained after |
 | `package.json` & dependencies | introduced | 2026-08-01 | 2026-08-01 | knew the 6-field spec; read the scaffolder's real file — read-back quiz (extras vs spec) still owed at 1.3 open |
 | `node_modules`, the lockfile & transitive deps | practicing | 2026-08-01 | 2026-08-01 | predicted 4 folders, got 105; explained gap unprompted: "the dependencies ask for the rest" |
 | npm's project resolution (walk-up rule) | practicing | 2026-08-01 | 2026-08-01 | live incident: install landed in `~`; followed clues (`npm prefix`, prompt counter) to diagnose + clean it with guidance |
@@ -42,7 +44,7 @@ are `understood` and fresh. Anything walked through and checked during planning
 | The `--` separator convention | introduced | 2026-08-01 | — | corrected own command; then hit `git log oneline` fatal and self-fixed to `--oneline` |
 | Vite: dev server + bundling | introduced | 2026-08-01 | — | defined in trunk; no learner evidence yet |
 | JSX | introduced | 2026-08-01 | — | defined during stack decisions; no learner evidence yet |
-| React components & props | introduced | 2026-08-01 | — | defined in trunk (piece 5) |
+| React components & props | practicing | 2026-08-01 | 2026-08-01 | wrote first component from spec unaided (function App, JSX return, default export); props still untouched |
 | React's core idea: UI as a function of state | introduced | 2026-08-01 | 2026-08-01 | quiz: gave co-location answer; corrected to "React does the DOM bookkeeping" — re-probe in Section 3 |
 | State & `useState` | introduced | 2026-08-01 | — | defined in trunk; not yet used |
 | `useEffect` (run code when a component appears) | introduced | 2026-08-01 | — | one-line definition only |
@@ -68,8 +70,8 @@ are `understood` and fresh. Anything walked through and checked during planning
 |---|---|---|---|---|
 | Git: commits as snapshots, history | practicing | 2026-08-01 | 2026-08-01 | made first two real commits (`a718398`, `42c1734`), read `git log --oneline`; earlier: explained the no-commits fatal + untracked |
 | Git as a safety net (commit before risky ops) | practicing | 2026-08-01 | 2026-08-01 | canceled a scaffold mid-prompt when uncommitted, committed docs first, then re-ran — did the right sequence with prompting |
-| GitHub: remotes & push | introduced | 2026-08-01 | — | defined in trunk; not yet done |
-| `.gitignore` | seed | — | — | — |
+| GitHub: remotes & push | practicing | 2026-08-01 | 2026-08-01 | created + pushed real repo with gh CLI; explained push payload ("the commits not the files") |
+| `.gitignore` | practicing | 2026-08-01 | 2026-08-01 | explained its effect unprompted ("gitignore keeps node_modules out"); hasn't authored one yet |
 | CI/CD: GitHub Actions push→build→publish chain | introduced | 2026-08-01 | 2026-08-01 | quiz ❌: "the repo scans and updates" — 5-step chain taught; MUST re-check hands-on at end of Section 1 |
 | Static hosting & GitHub Pages | introduced | 2026-08-01 | 2026-08-01 | quiz ✅: "GitHub Pages is for static sites" |
 | SPA (single-page application) | introduced | 2026-08-01 | — | used the term correctly unprompted |
