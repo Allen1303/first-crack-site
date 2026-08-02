@@ -17,6 +17,23 @@ now, deep dive scheduled) · `generated` (machine-made, never edit) ·
 | `learning/file-map.md` | known | This file — one honest line per file, so nothing in my repo is a mystery box. |
 | `.git/` | generated | Git's internal database of commits; managed entirely by git commands, never edited by hand. |
 
+### Scaffolded 2026-08-01 by `create-vite` (contract override on Task 1.2 — toured, not hand-written)
+
+| Path | Mark | What / why |
+|---|---|---|
+| `package.json` | parked → tour in progress | The project ID card the scaffolder wrote instead of me: name, scripts, dependencies. I owe a line-by-line read against the spec I was going to write. |
+| `package-lock.json` | generated | Exact frozen versions of the whole dependency chain; npm's, never edited. |
+| `node_modules/` | generated | The installed packages (100+, transitive); regenerable, never committed. |
+| `.gitignore` | parked | The scaffolder's list of what git must never track (`node_modules`, `dist`…); read it in Task 1.4. |
+| `index.html` | parked | The single real HTML page; loads `src/main.jsx`. Deep dive in Task 1.3. |
+| `vite.config.js` | parked | Vite settings: React plugin now; Tailwind + Pages `base` added later. Deep dive in 1.3/1.6. |
+| `src/main.jsx` | parked | JS entry point: mounts React onto the HTML page. Deep dive in Task 1.3. |
+| `src/App.jsx` | parked | Scaffolder's demo counter component — gets replaced by my own code in Task 1.3. |
+| `src/App.css`, `src/index.css` | parked | Scaffolder's demo styles; replaced wholesale by the Tailwind setup in Section 2. |
+| `src/assets/react.svg`, `public/vite.svg` | parked | Logo images for the demo page; deleted with the boilerplate in 1.3. |
+| `eslint.config.js` | parked | Config for ESLint, a code-mistake linter the scaffolder includes; honest one-liner for now, revisit if we adopt linting. |
+| `README.md` | parked | Scaffolder boilerplate text; rewritten in my own words at end of Section 1. |
+
 ## Target shape — from the demo, not yet authored in build/
 
 The demo at `~/Documents/learning-project/demo` is the finished shape this repo grows
