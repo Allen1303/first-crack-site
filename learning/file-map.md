@@ -21,16 +21,17 @@ now, deep dive scheduled) · `generated` (machine-made, never edit) ·
 
 | Path | Mark | What / why |
 |---|---|---|
-| `package.json` | parked → tour in progress | The project ID card the scaffolder wrote instead of me: name, scripts, dependencies. I owe a line-by-line read against the spec I was going to write. |
+| `package.json` | known | Project ID card: read line-by-line against my own spec; all six planned fields found + eslint/@types extras explained. |
 | `package-lock.json` | generated | Exact frozen versions of the whole dependency chain; npm's, never edited. |
 | `node_modules/` | generated | The installed packages (100+, transitive); regenerable, never committed. |
 | `.gitignore` | parked | The scaffolder's list of what git must never track (`node_modules`, `dist`…); read it in Task 1.4. |
-| `index.html` | parked | The single real HTML page; loads `src/main.jsx`. Deep dive in Task 1.3. |
-| `vite.config.js` | parked | Vite settings: React plugin now; Tailwind + Pages `base` added later. Deep dive in 1.3/1.6. |
-| `src/main.jsx` | parked | JS entry point: mounts React onto the HTML page. Deep dive in Task 1.3. |
-| `src/App.jsx` | parked | Scaffolder's demo counter component — gets replaced by my own code in Task 1.3. |
-| `src/App.css`, `src/index.css` | parked | Scaffolder's demo styles; replaced wholesale by the Tailwind setup in Section 2. |
-| `src/assets/` (`react.svg`, `vite.svg`, `hero.png`) | parked | Demo images the template ships; deleted with the boilerplate in 1.3. |
+| `index.html` | known | The single real HTML page: root div + module script; explained `type="module"` unlocks import/export. |
+| `vite.config.js` | known | Vite settings: React plugin + my hand-added `base: '/first-crack-site/'` (URL prefix for Pages — NOT "reading dist"; corrected once). |
+| `src/main.jsx` | known | The seam: "js finds the root div and react renders the app inside it." Rebuilt from blank at the S1 checkpoint. |
+| `src/App.jsx` | known | My first hand-written component (h1); grows into the section composer. |
+| `src/index.css` | known | Emptied by me; Tailwind's import lands here in S2. (`App.css` + `src/assets/` deleted in the sweep.) |
+| `.github/workflows/deploy.yml` | known | My CI/CD recipe, typed with per-line comments: push → fresh machine → npm ci → build → dist to Pages. |
+| `dist/` | generated | Build output (gitignored): compiled JS incl. React engine, fingerprinted assets; what Pages actually serves. |
 | `public/favicon.svg`, `public/icons.svg` | parked | Template's browser-tab icon + icon sprite; favicon gets replaced with our own eventually. |
 | `eslint.config.js` | parked | Config for ESLint, a code-mistake linter the scaffolder includes; honest one-liner for now, revisit if we adopt linting. |
 | `README.md` | parked | Scaffolder boilerplate text; rewritten in my own words at end of Section 1. |

@@ -35,10 +35,10 @@ are `understood` and fresh. Anything walked through and checked during planning
 | Concept | Status | Introduced | Reviewed | Evidence |
 |---|---|---|---|---|
 | ES modules (`import`/`export`) | practicing | 2026-08-01 | 2026-08-01 | explained `type="module"` unlocks import/export; traced the import chain (main.jsx → App.jsx, index.css) |
-| The render chain (HTML → module script → React mount) | practicing | 2026-08-01 | 2026-08-01 | own words: "js finds the root div and react renders the app inside it"; wrote + rendered own App.jsx |
+| The render chain (HTML → module script → React mount) | understood | 2026-08-01 | 2026-08-01 | CHECKPOINT: deleted main.jsx, rebuilt from blank unaided, verified by render; StrictMode explained after prompt ("dev-only guardrail") |
 | Vite dev server & HMR | introduced | 2026-08-01 | 2026-08-01 | observed live: "page auto refreshed without me reloading"; HMR/websocket explained after |
 | `package.json` & dependencies | introduced | 2026-08-01 | 2026-08-01 | knew the 6-field spec; read the scaffolder's real file — read-back quiz (extras vs spec) still owed at 1.3 open |
-| `node_modules`, the lockfile & transitive deps | practicing | 2026-08-01 | 2026-08-01 | predicted 4 folders, got 105; explained gap unprompted: "the dependencies ask for the rest" |
+| `node_modules`, the lockfile & transitive deps | understood | 2026-08-01 | 2026-08-01 | conceptual: "the dependencies ask for the rest" (105 vs 4) + "npm ci installs the exact versions from the lockfile" — both unprompted, quizzed |
 | npm's project resolution (walk-up rule) | practicing | 2026-08-01 | 2026-08-01 | live incident: install landed in `~`; followed clues (`npm prefix`, prompt counter) to diagnose + clean it with guidance |
 | Paths: absolute vs relative (`~`, `.`) | introduced | 2026-08-01 | — | asked "run from build/?" → taught; saw why `rm -rf` used absolute paths |
 | The `--` separator convention | introduced | 2026-08-01 | — | corrected own command; then hit `git log oneline` fatal and self-fixed to `--oneline` |
@@ -72,8 +72,9 @@ are `understood` and fresh. Anything walked through and checked during planning
 | Git as a safety net (commit before risky ops) | practicing | 2026-08-01 | 2026-08-01 | canceled a scaffold mid-prompt when uncommitted, committed docs first, then re-ran — did the right sequence with prompting |
 | GitHub: remotes & push | practicing | 2026-08-01 | 2026-08-01 | created + pushed real repo with gh CLI; explained push payload ("the commits not the files") |
 | `.gitignore` | practicing | 2026-08-01 | 2026-08-01 | explained its effect unprompted ("gitignore keeps node_modules out"); hasn't authored one yet |
-| CI/CD: GitHub Actions push→build→publish chain | introduced | 2026-08-01 | 2026-08-01 | quiz ❌: "the repo scans and updates" — 5-step chain taught; MUST re-check hands-on at end of Section 1 |
-| Static hosting & GitHub Pages | introduced | 2026-08-01 | 2026-08-01 | quiz ✅: "GitHub Pages is for static sites" |
+| CI/CD: GitHub Actions push→build→publish chain | practicing | 2026-08-01 | 2026-08-01 | built + ran the real pipeline; scan-theory resurfaced once in essay form, then micro-quiz 5/5 (GitHub's machine / the push / deploy.yml / dist / runs every push) — re-probe casually at next deploy |
+| GitHub Actions workflow YAML | practicing | 2026-08-01 | 2026-08-01 | typed deploy.yml from filled reference (tap-out), kept comments, green first run; read a real 422 API error en route |
+| Static hosting & GitHub Pages | practicing | 2026-08-01 | 2026-08-01 | site live at allen1303.github.io/first-crack-site; explained `base` path need was taught, not yet self-explained |
 | SPA (single-page application) | introduced | 2026-08-01 | — | used the term correctly unprompted |
 | Form validation UX (inline errors, states) | seed | — | — | — |
 | Accessibility: ARIA, keyboard, focus | introduced | 2026-08-01 | — | defined in trunk (piece 7) |

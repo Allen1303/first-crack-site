@@ -117,10 +117,15 @@ the frontend is whole, and fixes the localStorage limitation for real.
      react and react dom engine code"). Read the build output: empty CSS proves the
      sweep, fingerprinted filenames, gzip column, `public/` copied verbatim,
      `dist/` gitignored.
-   - [ ] **1.6 Deploy pipeline.** Write `.github/workflows/deploy.yml` from spec,
-     configure Pages, push, watch the Action run.
-     *See: the page live at a public URL — then the CI/CD re-quiz (5-step chain)
-     and the section checkpoint (unaided rebuild of the smallest piece).*
+   - [x] **1.6 Deploy pipeline.** ✅ 2026-08-01 — SECTION 1 COMPLETE. `deploy.yml`
+     typed from a filled reference (tap-out invoked; retyped, not pasted), `base`
+     added to vite.config, Pages enabled via `gh api` (my wrong `build_type=actions`
+     → he read the 422 and we fixed to `workflow`). Green run, live at
+     https://allen1303.github.io/first-crack-site/. Exit quiz: first essay attempt
+     still fuzzy ("github watch") → re-taught → micro-quiz 5/5 (whose machine, what
+     starts it, what document, what folder, runs-every-push). `npm ci` explained.
+     **Checkpoint passed:** deleted `src/main.jsx`, rebuilt from blank unaided
+     (claims no reference; matched original incl. StrictMode), verified by render.
 
 2. **Design system and static skeleton.**
    Tailwind v4 + the demo's tokens in `@theme`; `stamp`/`display-head` utilities;
