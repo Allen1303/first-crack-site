@@ -112,8 +112,11 @@ the frontend is whole, and fixes the localStorage limitation for real.
      --push` (his call to use the CLI). Read the push output: "it sent the commits
      not the files, gitignore keeps node_modules out." Safety-net commit habit
      started in 1.2 detour.
-   - [ ] **1.5 Production build.** Predict, then run `npm run build`; tour `dist/`.
-     *See: the plain files that will actually be hosted.*
+   - [x] **1.5 Production build.** ✅ 2026-08-01 — predicted JSX compilation ✓,
+     size ✗ (guessed node_modules-scale; actual 191 KB → explained the gap: "the
+     react and react dom engine code"). Read the build output: empty CSS proves the
+     sweep, fingerprinted filenames, gzip column, `public/` copied verbatim,
+     `dist/` gitignored.
    - [ ] **1.6 Deploy pipeline.** Write `.github/workflows/deploy.yml` from spec,
      configure Pages, push, watch the Action run.
      *See: the page live at a public URL — then the CI/CD re-quiz (5-step chain)

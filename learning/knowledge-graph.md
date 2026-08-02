@@ -42,7 +42,7 @@ are `understood` and fresh. Anything walked through and checked during planning
 | npm's project resolution (walk-up rule) | practicing | 2026-08-01 | 2026-08-01 | live incident: install landed in `~`; followed clues (`npm prefix`, prompt counter) to diagnose + clean it with guidance |
 | Paths: absolute vs relative (`~`, `.`) | introduced | 2026-08-01 | — | asked "run from build/?" → taught; saw why `rm -rf` used absolute paths |
 | The `--` separator convention | introduced | 2026-08-01 | — | corrected own command; then hit `git log oneline` fatal and self-fixed to `--oneline` |
-| Vite: dev server + bundling | introduced | 2026-08-01 | — | defined in trunk; no learner evidence yet |
+| Vite: dev server + bundling | practicing | 2026-08-01 | 2026-08-01 | ran + interpreted a real build: JSX→JS ✓, explained the 189 KB ("react and react dom engine code"), fingerprints/gzip/public toured |
 | JSX | introduced | 2026-08-01 | — | defined during stack decisions; no learner evidence yet |
 | React components & props | practicing | 2026-08-01 | 2026-08-01 | wrote first component from spec unaided (function App, JSX return, default export); props still untouched |
 | React's core idea: UI as a function of state | introduced | 2026-08-01 | 2026-08-01 | quiz: gave co-location answer; corrected to "React does the DOM bookkeeping" — re-probe in Section 3 |
