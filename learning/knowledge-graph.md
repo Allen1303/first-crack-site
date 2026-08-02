@@ -35,8 +35,11 @@ are `understood` and fresh. Anything walked through and checked during planning
 | Concept | Status | Introduced | Reviewed | Evidence |
 |---|---|---|---|---|
 | ES modules (`import`/`export`) | seed | — | — | — |
-| `package.json` & dependencies | introduced | 2026-08-01 | — | defined in trunk (piece 2); toolchain quiz never answered — re-ask in Section 1 |
-| `node_modules` & the lockfile | seed | — | — | — |
+| `package.json` & dependencies | introduced | 2026-08-01 | 2026-08-01 | knew the 6-field spec; read the scaffolder's real file — read-back quiz (extras vs spec) still owed at 1.3 open |
+| `node_modules`, the lockfile & transitive deps | practicing | 2026-08-01 | 2026-08-01 | predicted 4 folders, got 105; explained gap unprompted: "the dependencies ask for the rest" |
+| npm's project resolution (walk-up rule) | practicing | 2026-08-01 | 2026-08-01 | live incident: install landed in `~`; followed clues (`npm prefix`, prompt counter) to diagnose + clean it with guidance |
+| Paths: absolute vs relative (`~`, `.`) | introduced | 2026-08-01 | — | asked "run from build/?" → taught; saw why `rm -rf` used absolute paths |
+| The `--` separator convention | introduced | 2026-08-01 | — | corrected own command; then hit `git log oneline` fatal and self-fixed to `--oneline` |
 | Vite: dev server + bundling | introduced | 2026-08-01 | — | defined in trunk; no learner evidence yet |
 | JSX | introduced | 2026-08-01 | — | defined during stack decisions; no learner evidence yet |
 | React components & props | introduced | 2026-08-01 | — | defined in trunk (piece 5) |
@@ -63,7 +66,8 @@ are `understood` and fresh. Anything walked through and checked during planning
 
 | Concept | Status | Introduced | Reviewed | Evidence |
 |---|---|---|---|---|
-| Git: commits as snapshots, history | practicing | 2026-08-01 | 2026-08-01 | ran + interpreted real output with help: explained `git log` fatal (no commits) and untracked ("changes aren't yet getting monitored"); staging area introduced, first commit still pending |
+| Git: commits as snapshots, history | practicing | 2026-08-01 | 2026-08-01 | made first two real commits (`a718398`, `42c1734`), read `git log --oneline`; earlier: explained the no-commits fatal + untracked |
+| Git as a safety net (commit before risky ops) | practicing | 2026-08-01 | 2026-08-01 | canceled a scaffold mid-prompt when uncommitted, committed docs first, then re-ran — did the right sequence with prompting |
 | GitHub: remotes & push | introduced | 2026-08-01 | — | defined in trunk; not yet done |
 | `.gitignore` | seed | — | — | — |
 | CI/CD: GitHub Actions push→build→publish chain | introduced | 2026-08-01 | 2026-08-01 | quiz ❌: "the repo scans and updates" — 5-step chain taught; MUST re-check hands-on at end of Section 1 |

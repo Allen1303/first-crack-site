@@ -30,7 +30,8 @@ now, deep dive scheduled) · `generated` (machine-made, never edit) ·
 | `src/main.jsx` | parked | JS entry point: mounts React onto the HTML page. Deep dive in Task 1.3. |
 | `src/App.jsx` | parked | Scaffolder's demo counter component — gets replaced by my own code in Task 1.3. |
 | `src/App.css`, `src/index.css` | parked | Scaffolder's demo styles; replaced wholesale by the Tailwind setup in Section 2. |
-| `src/assets/react.svg`, `public/vite.svg` | parked | Logo images for the demo page; deleted with the boilerplate in 1.3. |
+| `src/assets/` (`react.svg`, `vite.svg`, `hero.png`) | parked | Demo images the template ships; deleted with the boilerplate in 1.3. |
+| `public/favicon.svg`, `public/icons.svg` | parked | Template's browser-tab icon + icon sprite; favicon gets replaced with our own eventually. |
 | `eslint.config.js` | parked | Config for ESLint, a code-mistake linter the scaffolder includes; honest one-liner for now, revisit if we adopt linting. |
 | `README.md` | parked | Scaffolder boilerplate text; rewritten in my own words at end of Section 1. |
 

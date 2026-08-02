@@ -91,13 +91,19 @@ the frontend is whole, and fixes the localStorage limitation for real.
      git 2.47.1. Interpreted the empty-repo state: `git log` fatal ("because there
      are no commits yet"), untracked = "changes aren't yet getting monitored".
      Note: ran commands before predicting — hold the predict-first line next time.
-   - [ ] **1.2 Hand-authored `package.json` + install.** Write `package.json` myself
-     (no scaffolder), predict what `npm install` will do, run it, account for
-     `node_modules/` + `package-lock.json`.
-     *See: dependencies installed, every new file accounted for.*
-   - [ ] **1.3 First render.** Write `index.html`, `src/main.jsx`, minimal
-     `src/App.jsx`, `vite.config.js`; run `npm run dev`.
-     *See: "First Crack Roasting Co." rendered by React at localhost.*
+   - [x] **1.2 `package.json` + install.** ✅ 2026-08-01 — **contract override
+     invoked:** scaffolded with `create-vite` instead of hand-writing (explicitly
+     chosen after the tradeoff was laid out twice). Detour first: accidental install
+     landed in `~` via npm's walk-up rule — diagnosed from clues (`npm prefix`,
+     unchanged `?2`), cleaned with targeted `rm -rf`. All 12 scaffold files toured or
+     parked in the file map; 105 packages vs predicted 4 → transitive deps in own
+     words ("the dependencies ask for the rest"). Commits `a718398` (docs, made
+     BEFORE the risky scaffold — safety-net habit) and `42c1734` (scaffold).
+     *Carried into 1.3: read-back quiz on the scaffolder's package.json extras.*
+   - [ ] **1.3 First render, owned.** Open the read-back quiz; tour `index.html` →
+     `main.jsx` → `App.jsx` chain; delete the demo boilerplate and hand-write my own
+     minimal `App.jsx`; predict, then run `npm run dev`.
+     *See: "First Crack Roasting Co." rendered by React at localhost — by my code.*
    - [ ] **1.4 First commits + push.** `.gitignore`, staged commits with real
      messages, GitHub repo created, pushed.
      *See: my code on github.com.*

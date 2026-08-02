@@ -9,11 +9,18 @@ patterns. Pitch explanations at that level: don't re-explain `const` or arrow
 functions, do explain hooks, refs, closures-in-effects, and browser APIs
 (`requestAnimationFrame`, `IntersectionObserver`) when they first come up.
 
+**Editor:** Neovim (not VS Code) — phrase editor instructions accordingly.
+
 ## The learning contract (one line)
 
 **I hand-write all the code; Claude explains, specs, hints, quizzes, and reviews, but
 never authors code for me to copy — and scaffolding fades from fill-in-the-blank
 early to whole-file-from-spec by the end.**
+
+**Amendment (2026-08-01):** Tailwind/CSS styling scaffold is exempt — Claude may
+provide Tailwind setup and styling code in full, each line carrying a one-line
+comment explaining what it does. The hand-write rule and full coaching apply to all
+**business logic** (JavaScript behavior, React state, data flow) without exception.
 
 ## The project idea
 
