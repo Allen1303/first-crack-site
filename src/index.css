@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@theme {
+  /* each token = a CSS variable + auto-generated utilities (bg-char, text-bone, font-display…) */
+  --color-char: #17130f --color-ink: #0d0b08;
+  --color-bone: #efe9e1; /* warm off-white — primary text */
+  --color-bone-dim: #b7ac9c; /* muted bone — secondary/supporting text */
+  --color-blueberry: #5b4b8a; /* tasting note 1 + text-selection highlight */
+  --color-strawberry: #c4485b; /* tasting note 2 + form error states */
+  --color-apricot: #e8a15c; /* tasting note 3 + the primary accent/CTA color */
+  --color-apricot-bright: #f0b274; /* CTA hover state */
+  --color-stamp-ink: #e06378; /* the rubber-stamp red-pink */
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, Serif;
+  --font-body:
+    "Karla", -apple-system, "Helvetica Neue", sans-serif; /* body copy — clean sans */
+  --font-stamp:
+    ui-monospace, "SF Mono", Menlo, "Courier New", monospace; /* stamp labels — typewriter feel */
+}
+@layer base {
+  /* keyboard-focus ring, sitewide--a rule with no utility-class form */
+  :focus-visible {
+    outline: 3px solid var(--color-apricot);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+/* custom utility: rubber-stamp label (usage: className="stamp") */
+@utility stamp {
+  display: inline-block; /* so padding + rotation apply cleanly */
+  font-family: var(--font-stamp);
+  font-size: 0.875rem; /* 14px */
+  font-weight: 700;
+  letter-spacing: 0.18em; /* wide tracking — stencil feel */
+  color: var(--color-stamp-ink);
+  background: --alpha(
+    var(--color-ink) / 25%
+  ); /* translucent dark backing (v4 alpha function) */
+  backdrop-filter: blur(3px); /* frosts whatever sits behind it */
+  border: 2px solid currentColor; /* currentColor = reuse the text color */
+  padding: 0.4em 0.85em;
+  border-radius: 3px;
+  transform: rotate(-1.4deg); /* the hand-stamped tilt */
+  text-shadow: 0 0 0.8px currentColor; /* faint ink bleed */
+}
+@utility display-head {
+  font: family: var(--font-disply);
+  font-weight:600;
+  line-height: 1.18;
+  text-wrap: balance;
+  
+}

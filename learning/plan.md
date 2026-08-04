@@ -131,6 +131,27 @@ the frontend is whole, and fixes the localStorage limitation for real.
    Tailwind v4 + the demo's tokens in `@theme`; `stamp`/`display-head` utilities;
    `copy.js`; semantic HTML; Landing, Worth, Footer built for real.
    **Deliverable:** styled, readable one-page site — no interactivity — live.
+   *(Styling scaffold provided by Claude with per-line comments, per the 2026-08-01
+   amendment; all component structure and JS hand-written by Allen.)*
+
+   Tasks:
+   - [x] **2.1 Tailwind v4 wired in.** ✅ 2026-08-03 — installed, plugin registered,
+     `@import` in place; h1 restyled via utilities ("center bold orange"). Predicted
+     built CSS "tiny" ✓ (7.25 kB = reset + only-used classes); learned `className`
+     vs `class`.
+   - [x] **2.2 Design tokens + fonts + custom utilities.** ✅ 2026-08-03 — `@theme`
+     palette + font stacks in, Fraunces/Karla verified loading (woff2 spotted in
+     Network tab), stamp + display-head rendering ("nice reddish pink stamp",
+     bone-on-char headline). Scaffold delivered per amendment, per-line comments.
+   - [ ] **2.3 `copy.js` + Landing section.** Single-source-of-truth module
+     (hand-written from spec); Landing component consumes it via import.
+     *See: the landing beat, styled, fed by copy.js.*
+   - [ ] **2.4 Worth + Footer sections.** Worth includes my first props component
+     (`Figure`); Footer with address/hours. App composes all sections in order.
+     *See: the full static skeleton scrolling top to bottom.*
+   - [ ] **2.5 Ship it.** Focused commits, push, watch the pipeline, verify live.
+     Casual CI/CD re-probe rides along (per knowledge graph).
+     *See: the styled skeleton at allen1303.github.io/first-crack-site/.*
 
 3. **First real React state: Header and CtaBar.**
    `useState` menu; `useEffect` + scroll listener + `IntersectionObserver` for the
